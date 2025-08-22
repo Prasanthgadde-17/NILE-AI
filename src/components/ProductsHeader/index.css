@@ -1,0 +1,64 @@
+.products-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 24px;
+  flex-wrap: wrap;
+}
+
+@media screen and (min-width: 768px) {
+  .products-header {
+    margin-top: 32px;
+  }
+}
+
+.products-list-heading {
+  color: var(--text);
+  font-family: Inter, 'Roboto';
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+@media screen and (min-width: 768px) {
+  .products-list-heading {
+    font-size: 32px;
+  }
+}
+
+.sort-by-container {
+  display: flex;
+  align-items: center;
+}
+
+.sort-by-icon {
+  font-size: 24px;
+  color: var(--muted);
+  margin-right: 6px;
+}
+
+.sort-by {
+  color: var(--muted);
+  font-family: Inter, 'Roboto';
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.sort-by-select {
+  color: var(--text);
+  background: linear-gradient(180deg, rgba(30, 41, 59, 0.6), rgba(30, 41, 59, 0.35));
+  border: 1px solid rgba(148, 163, 184, 0.12);
+  font-family: Inter, 'Roboto';
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 10px;
+  padding: 10px 12px;
+  outline: none;
+  cursor: pointer;
+}
+
+.select-option {
+  color: var(--muted);
+  font-family: Inter, 'Roboto';
+  font-size: 14px;
+}

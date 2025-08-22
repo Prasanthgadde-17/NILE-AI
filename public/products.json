@@ -1,0 +1,306 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "title": "Wide Bowknot Hat",
+      "brand": "MAJIK",
+      "price": 154788,
+      "image_url": "https://assets.ccbp.in/frontend/react-js/ecommerce/clothes-cap.png",
+      "rating": 3.6,
+      "category": "1",
+      "description": "Stylish wide bowknot hat made of soft fabric, perfect for casual outings and sunny days."
+    },
+    {
+      "id": 2,
+      "title": "Plain Round Neck T-shirt",
+      "brand": "Huetrap",
+      "price": 395,
+      "image_url": "https://assets.ccbp.in/frontend/react-js/ecommerce/clothes-fit-t-shirt.png",
+      "rating": 4.1,
+      "category": "1",
+      "description": "Classic plain round-neck T-shirt made with breathable cotton for everyday comfort."
+    },
+    {
+      "id": 3,
+      "title": "Cotton Hoodie",
+      "brand": "Scott International",
+      "price": 498,
+      "image_url": "https://assets.ccbp.in/frontend/react-js/ecommerce/clothes-hoodie.png",
+      "rating": 3.8,
+      "category": "1",
+      "description": "Casual cotton hoodie with front pockets and a drawstring hood, ideal for cool evenings."
+    },
+    {
+      "id": 4,
+      "title": "Men's Waistcoat",
+      "brand": "LEVIS",
+      "price": 2500,
+      "image_url": "https://assets.ccbp.in/frontend/react-js/ecommerce/clothes-jacket.png",
+      "rating": 4.3,
+      "category": "1",
+      "description": "Premium men’s waistcoat with a tailored fit, perfect for formal occasions and parties."
+    },
+    {
+      "id": 5,
+      "title": "Slim Fit Jeans",
+      "brand": "LEVIS",
+      "price": 1469,
+      "image_url": "https://assets.ccbp.in/frontend/react-js/ecommerce/clothes-jeans-pants.png",
+      "rating": 3.1,
+      "category": "1",
+      "description": "Trendy slim fit jeans with stretchable fabric offering both comfort and style."
+    },
+    {
+      "id": 6,
+      "title": "Miss Chase Bodycon Dress",
+      "brand": "LEVIS",
+      "price": 974,
+      "image_url": "https://assets.ccbp.in/frontend/react-js/ecommerce/clothes-modren-net.png",
+      "rating": 3.8,
+      "category": "1",
+      "description": "Chic bodycon dress with modern net design, perfect for parties and evening wear."
+    },
+    {
+      "id": 7,
+      "title": "Zari Design Kurta",
+      "brand": "Libas",
+      "price": 1869,
+      "image_url": "https://assets.ccbp.in/frontend/react-js/ecommerce/clothes-punjabi.png",
+      "rating": 4.4,
+      "category": "1",
+      "description": "Traditional zari embroidered kurta crafted from fine cotton blend for festive wear."
+    },
+    {
+      "id": 8,
+      "title": "Slim Fit Blazer",
+      "brand": "LEVIS",
+      "price": 2599,
+      "image_url": "https://assets.ccbp.in/frontend/react-js/ecommerce/clothes-purple-jacket.png",
+      "rating": 4.2,
+      "category": "1",
+      "description": "Elegant slim fit blazer with premium fabric finish, designed for business and events."
+    },
+    {
+      "id": 9,
+      "title": "Animal Printed Shirt",
+      "brand": "Mufti",
+      "price": 1017,
+      "image_url": "https://assets.ccbp.in/frontend/react-js/ecommerce/clothes-short-sleeves-shirt.png",
+      "rating": 4.0,
+      "category": "1",
+      "description": "Trendy animal print shirt with short sleeves, adding a bold touch to casual outfits."
+    },
+    {
+      "id": 10,
+      "title": "Polyester Saree",
+      "brand": "Ahalyaa",
+      "price": 419,
+      "image_url": "https://assets.ccbp.in/frontend/react-js/ecommerce/clothes-side-sareee.png",
+      "rating": 3.8,
+      "category": "1",
+      "description": "Lightweight polyester saree with elegant patterns, suitable for daily and festive wear."
+    },
+
+    {
+      "id": 11,
+      "title": "Samsung Galaxy M14",
+      "brand": "Samsung",
+      "price": 13999,
+      "image_url": "",
+      "rating": 4.1,
+      "category": "2",
+      "description": "Samsung Galaxy M14 with a powerful battery and advanced camera for daily performance."
+    },
+    {
+      "id": 12,
+      "title": "Apple iPhone 14",
+      "brand": "Apple",
+      "price": 68999,
+      "image_url": "https://assets.ccbp.in/frontend/react-js/ecommerce/electronics-iphone-14.png",
+      "rating": 5,
+      "category": "2",
+      "description": "Apple iPhone 14 with stunning design, A15 Bionic chip, and advanced dual-camera system."
+    },
+    {
+      "id": 13,
+      "title": "OnePlus Nord CE",
+      "brand": "OnePlus",
+      "price": 22999,
+      "image_url": "https://assets.ccbp.in/frontend/react-js/ecommerce/electronics-oneplus-nord.png",
+      "rating": 4.3,
+      "category": "2",
+      "description": "OnePlus Nord CE offering smooth performance with OxygenOS and brilliant display."
+    },
+    {
+      "id": 14,
+      "title": "Sony WH-1000XM4",
+      "brand": "Sony",
+      "price": 24990,
+      "image_url": "https://assets.ccbp.in/frontend/react-js/ecommerce/electronics-sony-headphones.png",
+      "rating": 4.7,
+      "category": "2",
+      "description": "Sony WH-1000XM4 wireless headphones with industry-leading noise cancellation."
+    },
+    {
+      "id": 15,
+      "title": "Dell Inspiron 15",
+      "brand": "Dell",
+      "price": 52990,
+      "image_url": "https://assets.ccbp.in/frontend/react-js/ecommerce/electronics-dell-laptop.png",
+      "rating": 4.5,
+      "category": "2",
+      "description": "Dell Inspiron 15 laptop with Intel processor and long battery life for professionals."
+    },
+    {
+      "id": 16,
+      "title": "HP Pavilion x360",
+      "brand": "HP",
+      "price": 58990,
+      "image_url": "https://assets.ccbp.in/frontend/react-js/ecommerce/electronics-hp-pavilion.png",
+      "rating": 4.2,
+      "category": "2",
+      "description": "HP Pavilion x360 convertible laptop with touchscreen and powerful performance."
+    },
+    {
+      "id": 17,
+      "title": "Samsung LED TV 43 inch",
+      "brand": "Samsung",
+      "price": 30999,
+      "image_url": "https://assets.ccbp.in/frontend/react-js/ecommerce/electronics-samsung-tv.png",
+      "rating": 4.6,
+      "category": "2",
+      "description": "Samsung 43-inch LED Smart TV with crystal clear display and immersive sound."
+    },
+    {
+      "id": 18,
+      "title": "Mi Power Bank 10000mAh",
+      "brand": "Xiaomi",
+      "price": 999,
+      "image_url": "https://assets.ccbp.in/frontend/react-js/ecommerce/electronics-mi-powerbank.png",
+      "rating": 4.1,
+      "category": "2",
+      "description": "Compact Mi 10000mAh power bank with dual output ports and fast charging support."
+    },
+    {
+      "id": 19,
+      "title": "Canon DSLR EOS 1500D",
+      "brand": "Canon",
+      "price": 34990,
+      "image_url": "https://assets.ccbp.in/frontend/react-js/ecommerce/electronics-canon-dslr.png",
+      "rating": 4.4,
+      "category": "2",
+      "description": "Canon EOS 1500D DSLR with 24.1MP sensor and Full HD video recording capability."
+    },
+    {
+      "id": 20,
+      "title": "Boat Bluetooth Speaker",
+      "brand": "Boat",
+      "price": 1499,
+      "image_url": "https://assets.ccbp.in/frontend/react-js/ecommerce/electronics-boat-speaker.png",
+      "rating": 4.2,
+      "category": "2",
+      "description": "Portable Boat Bluetooth speaker with deep bass and waterproof design."
+    },
+
+    {
+      "id": 21,
+      "title": "Fortune Sunflower Oil 1L",
+      "brand": "Fortune",
+      "price": 120,
+      "image_url": "https://assets.ccbp.in/frontend/react-js/ecommerce/grocery-sunflower-oil.png",
+      "rating": 4.1,
+      "category": "4",
+      "description": "Fortune refined sunflower oil, light and healthy choice for everyday cooking."
+    },
+    {
+      "id": 22,
+      "title": "Aashirvaad Wheat Flour 5kg",
+      "brand": "Aashirvaad",
+      "price": 250,
+      "image_url": "https://assets.ccbp.in/frontend/react-js/ecommerce/grocery-wheat-flour.png",
+      "rating": 4.3,
+      "category": "4",
+      "description": "Aashirvaad atta, made from 100% whole wheat for soft and fluffy rotis."
+    },
+    {
+      "id": 23,
+      "title": "Tata Salt 1kg",
+      "brand": "Tata",
+      "price": 20,
+      "image_url": "https://assets.ccbp.in/frontend/react-js/ecommerce/grocery-salt.png",
+      "rating": 4.5,
+      "category": "4",
+      "description": "Tata iodized salt, a trusted household brand ensuring health and taste."
+    },
+    {
+      "id": 24,
+      "title": "Amul Butter 500g",
+      "brand": "Amul",
+      "price": 235,
+      "image_url": "https://assets.ccbp.in/frontend/react-js/ecommerce/grocery-amul-butter.png",
+      "rating": 4.7,
+      "category": "4",
+      "description": "Amul butter, rich and creamy spread loved for its delicious taste."
+    },
+    {
+      "id": 25,
+      "title": "Nestle Milk Powder 1kg",
+      "brand": "Nestle",
+      "price": 450,
+      "image_url": "https://assets.ccbp.in/frontend/react-js/ecommerce/grocery-milk-powder.png",
+      "rating": 4.2,
+      "category": "4",
+      "description": "Nestle milk powder, perfect for tea, coffee, and desserts with rich flavor."
+    },
+    {
+      "id": 26,
+      "title": "Parle-G Biscuits 800g",
+      "brand": "Parle",
+      "price": 80,
+      "image_url": "https://assets.ccbp.in/frontend/react-js/ecommerce/grocery-parle-g.png",
+      "rating": 4.4,
+      "category": "4",
+      "description": "Parle-G, the classic glucose biscuits enjoyed with tea across generations."
+    },
+    {
+      "id": 27,
+      "title": "Maggi Noodles 12 Pack",
+      "brand": "Nestle",
+      "price": 150,
+      "image_url": "https://assets.ccbp.in/frontend/react-js/ecommerce/grocery-maggi.png",
+      "rating": 4.6,
+      "category": "4",
+      "description": "Nestle Maggi instant noodles, the 2-minute snack loved by all ages."
+    },
+    {
+      "id": 28,
+      "title": "Bru Instant Coffee 200g",
+      "brand": "Bru",
+      "price": 120,
+      "image_url": "https://assets.ccbp.in/frontend/react-js/ecommerce/grocery-bru-coffee.png",
+      "rating": 4.2,
+      "category": "4",
+      "description": "Bru instant coffee, rich aroma and taste for a perfect coffee experience."
+    },
+    {
+      "id": 29,
+      "title": "Red Label Tea 500g",
+      "brand": "Brooke Bond",
+      "price": 250,
+      "image_url": "https://assets.ccbp.in/frontend/react-js/ecommerce/grocery-red-label-tea.png",
+      "rating": 4.5,
+      "category": "4",
+      "description": "Brooke Bond Red Label tea with strong flavor for an energizing cup."
+    },
+    {
+      "id": 30,
+      "title": "Kellogg’s Corn Flakes 1kg",
+      "brand": "Kellogg’s",
+      "price": 320,
+      "image_url": "https://assets.ccbp.in/frontend/react-js/ecommerce/grocery-cornflakes.png",
+      "rating": 4.3,
+      "category": "4",
+      "description": "Kellogg’s corn flakes, a healthy and crunchy breakfast cereal enriched with vitamins."
+    }
+  ]
+}
