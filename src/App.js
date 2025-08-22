@@ -1,5 +1,5 @@
 import {useState, useMemo} from 'react'
-import {Route, Routes, Navigate} from 'react-router-dom'
+import {Route, Routes, Navigate, useLocation} from 'react-router-dom'
 
 import LoginForm from './components/LoginForm'
 import Home from './components/Home'
@@ -9,11 +9,13 @@ import Cart from './components/Cart'
 import NotFound from './components/NotFound'
 import ProtectedRoute from './components/ProtectedRoute'
 import CartContext from './context/CartContext'
+import ChatWidget from './components/chat/ChatWidget'
 
 import './App.css'
 
 function App() {
   const [cartList, setCartList] = useState([])
+  const location = useLocation() // ✅ React Router hook
 
   const removeAllCartItems = () => {
     setCartList([])
@@ -36,7 +38,7 @@ function App() {
         .map(eachItem => {
           if (eachItem.id === id) {
             if (eachItem.quantity === 1) {
-              return null // Will be filtered out
+              return null // remove item
             }
             return {...eachItem, quantity: eachItem.quantity - 1}
           }
@@ -87,23 +89,30 @@ function App() {
     [cartList],
   )
 
+  const hideChat = location.pathname === '/login' // ✅ hide on login
+
   return (
     <CartContext.Provider value={contextValue}>
-      <Routes>
-        <Route path="/login" element={<LoginForm />} />
-        <Route path="/" element={<ProtectedRoute component={Home} />} />
-        <Route
-          path="/products"
-          element={<ProtectedRoute component={Products} />}
-        />
-        <Route
-          path="/products/:id"
-          element={<ProtectedRoute component={ProductItemDetails} />}
-        />
-        <Route path="/cart" element={<ProtectedRoute component={Cart} />} />
-        <Route path="/not-found" element={<NotFound />} />
-        <Route path="*" element={<Navigate to="/" replace />} />
-      </Routes>
+      <>
+        <Routes>
+          <Route path="/login" element={<LoginForm />} />
+          <Route path="/" element={<ProtectedRoute component={Home} />} />
+          <Route
+            path="/products"
+            element={<ProtectedRoute component={Products} />}
+          />
+          <Route
+            path="/products/:id"
+            element={<ProtectedRoute component={ProductItemDetails} />}
+          />
+          <Route path="/cart" element={<ProtectedRoute component={Cart} />} />
+          <Route path="/not-found" element={<NotFound />} />
+          <Route path="*" element={<Navigate to="/" replace />} />
+        </Routes>
+
+        {/* ✅ only show chat widget if NOT on login */}
+        {!hideChat && <ChatWidget />}
+      </>
     </CartContext.Provider>
   )
 }
