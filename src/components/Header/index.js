@@ -34,7 +34,7 @@ function Header() {
           <Link to="/">
             <motion.img
               className="website-logo"
-              src="https://assets.ccbp.in/frontend/react-js/nxt-trendz-logo-img.png"
+              src="/img/image.png"
               alt="website logo"
               initial={{opacity: 0, y: 6}}
               animate={{opacity: 1, y: 0}}
@@ -57,14 +57,11 @@ function Header() {
 
         <div className="nav-bar-large-container">
           <Link to="/">
-            {/* <motion.img
-              className="website-logo"
-              src="https://assets.ccbp.in/frontend/react-js/nxt-trendz-logo-img.png"
-              alt="website logo"
-              initial={{opacity: 0, y: 6}}
-              animate={{opacity: 1, y: 0}}
-              transition={{duration: 0.3}}
-            /> */}
+            <img
+              src="/img/image.png"
+              alt="Company logo"
+              className="image-logo"
+            />
           </Link>
           <ul className="nav-menu">
             <li className="nav-menu-item">

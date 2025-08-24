@@ -7,7 +7,7 @@ function uniqueId() {
 }
 
 export default function ChatWidget({
-  apiUrl = 'http://localhost:5000/api/chat',
+  apiUrl = 'http://localhost:2000/api/chat',
 }) {
   const [open, setOpen] = useState(false)
   const [messages, setMessages] = useState([])
@@ -99,8 +99,8 @@ export default function ChatWidget({
 
   const isMobile = windowWidth < 640
   const containerStyle = {
-    width: isMobile ? '100vw' : '30vw',
-    height: isMobile ? '100vh' : '60vh',
+    width: isMobile ? '100vw' : '48vw',
+    height: isMobile ? '100vh' : '89vh',
     right: isMobile ? 0 : '1.5rem',
     left: isMobile ? 0 : undefined,
     borderRadius: isMobile ? 0 : '12px',

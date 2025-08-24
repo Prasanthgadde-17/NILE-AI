@@ -5,7 +5,11 @@
   display: flex;
   justify-content: center;
   backdrop-filter: saturate(140%) blur(10px);
-  background: linear-gradient(180deg, rgba(2, 6, 23, 0.7), rgba(2, 6, 23, 0.35));
+  background: linear-gradient(
+    180deg,
+    rgba(2, 6, 23, 0.7),
+    rgba(2, 6, 23, 0.35)
+  );
   border-bottom: 1px solid rgba(148, 163, 184, 0.12);
 }
 
@@ -15,6 +19,64 @@
     align-items: center;
     border-bottom-style: none;
   }
+}
+/* Base: crisp, responsive, keeps aspect ratio */
+.image-logo {
+  display: inline-block;
+  height: 40px; /* tweak this to your navbar height */
+  width: auto; /* keep original aspect ratio */
+  max-width: 100%;
+  object-fit: contain;
+  vertical-align: middle;
+
+  /* Sharper rendering for PNG/SVG on various displays */
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+
+  /* Subtle interaction when logo is a link */
+  transition:
+    transform 120ms ease,
+    filter 120ms ease;
+}
+
+/* Scale up a touch on larger screens */
+@media (min-width: 480px) {
+  .image-logo {
+    height: 48px;
+  }
+}
+@media (min-width: 1024px) {
+  .image-logo {
+    height: 56px;
+  }
+}
+
+/* Hover effect (only if wrapped in an anchor) */
+a:hover .image-logo {
+  transform: translateY(-1px);
+}
+
+/* Respect users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .image-logo {
+    transition: none;
+  }
+  a:hover .image-logo {
+    transform: none;
+  }
+}
+
+/* Optional: dark-mode variant if you have a dark navbar */
+@media (prefers-color-scheme: dark) {
+  .image-logo--on-dark {
+    filter: brightness(1.05) contrast(1.05);
+  }
+}
+
+/* Optional: if you use a monochrome SVG and want it white in dark mode
+   (avoid this for full-color brand marks) */
+.dark .image-logo--mono {
+  filter: brightness(0) invert(1);
 }
 
 .nav-content {
@@ -59,7 +121,8 @@
 }
 
 .website-logo {
-  width: 120px;
+  width: 50px;
+  height: 50px;
   filter: drop-shadow(0 6px 20px rgba(0, 0, 0, 0.35));
 }
 
@@ -123,7 +186,9 @@
   color: var(--text);
   padding: 8px 12px;
   border-radius: 8px;
-  transition: background-color 180ms ease, color 180ms ease;
+  transition:
+    background-color 180ms ease,
+    color 180ms ease;
 }
 .nav-link:hover {
   background: rgba(148, 163, 184, 0.08);
@@ -147,7 +212,9 @@
   cursor: pointer;
   outline: none;
   box-shadow: 0 8px 20px rgba(37, 99, 235, 0.35);
-  transition: transform 180ms ease, box-shadow 180ms ease;
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease;
 }
 .logout-desktop-btn:hover {
   transform: translateY(-2px);
